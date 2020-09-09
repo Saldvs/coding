@@ -1,10 +1,28 @@
 PImage aventure;
 PFont font;
+PFont scribble;
 
-void setup () {
-size (500,400);
-aventure = loadImage("aventure.JPG");
-font = loadFont 
+void setup () 
+{
+size (800,505);
+aventure = loadImage("aventure.jpg");
+font = loadFont("voyage.vlw");
+scribble = loadFont("scribble.vlw"); 
 }
 
-background(860,250,300);
+void draw ()
+{
+  image(aventure,0,0);
+  
+  textFont(font);
+  text("Le plus beau voyage,",30,225);
+  
+  textFont(scribble);
+   text("c'est celui qu'on a pas encore fait",30,260);
+   
+   textFont(font);
+  text("-Loick Peyron",30,290);
+   
+   saveFrame("SalvatoreSammartino-LABO1.png");
+   
+}
