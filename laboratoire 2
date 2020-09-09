@@ -1,5 +1,10 @@
+PImage aventure;
+PFont font;
+
+void setup () {
 size (500,400);
-PImage img;
-im
+aventure = loadImage("aventure.JPG");
+font = loadFont 
+}
 
 background(860,250,300);
